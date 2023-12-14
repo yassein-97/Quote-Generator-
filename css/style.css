@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    color: black;
+}
+p{
+    font-size: 2.1875rem;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 40px;
+}
+.home{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.vedio-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.vedio-layer video{
+    width: 100%;
+}
+.quote-card{
+    width: 60%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 30px;
+    border-radius: 15px;
+    z-index: 5;
+}
+
+.new-quote-btn{
+    background-color: rgb(8, 101, 85);
+    color: white;
+    width: 200px;
+    height: 60px;
+    transition: all 0.5s;
+}
+
+.new-quote-btn:hover{
+    background-color: rgb(101, 101, 101);
+    color: white;
+}
+
+@media screen and (max-width:1199px){
+    html{
+        font-size: 14px;
+    }
+    .quote-card{
+        width: 75%;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px) {
+    html{
+        font-size: 15px;
+    }
+    .quote-card{
+        width: 90%;
+    }
+    .vedio-layer{
+        height: 120vh;
+        width: 97vw;
+    }
+}
+@media screen and (max-width:575px) { 
+    html{
+        font-size: 13px;
+    }
+    .quote-card{
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .vedio-layer{
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1399px) {
+    html{
+        font-size: 15px;
+    }
+    .vedio-layer video{
+        width: 105%;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    html{
+        font-size: 15px;
+    }
+    .vedio-layer video{
+        width: 125%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    html{
+        font-size: 15px;
+    }
+    .vedio-layer video{
+        width: 237%;
+    }
+    .quote-card{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px) { 
+    html{
+        font-size: 12px;
+    }
+    .vedio-layer video{
+        width: 218%;
+    }
+}
+
+@media screen and (max-width:575px) { 
+    .quote-card{
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        border-radius: 0;
+    }
+    html{
+        font-size: 12px;
+    }
+    .vedio-layer video{
+        width: 305%;
+    }
+}
+@media screen and (max-width:475px) { 
+    .quote-card{
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        border-radius: 0;
+    }
+    html{
+        font-size: 12px;
+    }
+    .vedio-layer video{
+        width: 352%;
+    }
+}

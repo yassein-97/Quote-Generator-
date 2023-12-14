@@ -145,7 +145,7 @@ p{
         font-size: 11px;
     }
     .vedio-layer video{
-        width: 305%;
+        width: 320%;
     }
 }
 @media screen and (max-width:475px) { 
@@ -160,6 +160,6 @@ p{
         font-size: 11px;
     }
     .vedio-layer video{
-        width: 352%;
+        width: 370%;
     }
 }
